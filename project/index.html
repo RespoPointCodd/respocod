@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respo_codeur - Portfolio & Blog</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-code me-2"></i>Respo_codeur
+            </a>
+            
+            <div class="d-flex align-items-center">
+                <!-- Theme Toggle -->
+                <button class="btn btn-outline-light me-3" id="themeToggle">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                
+                <!-- Notification Bell -->
+                <div class="notification-bell me-3">
+                    <i class="fas fa-bell" id="notificationBell"></i>
+                    <span class="notification-badge" id="notificationBadge">2</span>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Témoignages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="text-primary">Wilfred Djikiakam</span><br>
+                            <span class="typing-text">Développeur Full Stack</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Spécialisé en développement web (Front & Back-end) et C#<br>
+                            Plus de 3 ans d'expérience • Basé à Douala, Cameroun
+                        </p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Années d'expérience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">25+</span>
+                                <span class="stat-label">Projets réalisés</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Satisfaction clients</span>
+                            </div>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="#portfolio" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-eye me-2"></i>Voir mes projets
+                            </a>
+                            <a href="https://wa.me/672922360" target="_blank" class="btn btn-outline-primary btn-lg">
+                                <i class="fab fa-whatsapp me-2"></i>Me contacter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <div class="floating-elements">
+                            <div class="floating-element" data-speed="2">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="floating-element" data-speed="3">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="floating-element" data-speed="4">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="floating-element" data-speed="2.5">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="floating-element" data-speed="3.5">
+                                <i class="fab fa-microsoft"></i>
+                            </div>
+                            <div class="floating-element" data-speed="2.8">
+                                <i class="fab fa-react"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title">À propos de moi</h2>
+                    <p class="lead">
+                        Développeur passionné avec une expertise approfondie en développement web et C#, 
+                        titulaire d'une licence en génie logiciel de l'Institut Universitaire des Leaders.
+                    </p>
+                    <p>
+                        Avec plus de 3 ans d'expérience dans le développement logiciel, je me spécialise dans la création 
+                        d'applications web modernes et d'applications desktop en C#. Mon parcours m'a permis de maîtriser 
+                        l'ensemble de la chaîne de développement, du front-end au back-end.
+                    </p>
+                    <p>
+                        Basé à Douala au Cameroun, je travaille avec des clients du monde entier grâce au télétravail, 
+                        tout en restant disponible pour des déplacements selon les besoins du projet. Ma passion pour 
+                        l'innovation technologique me pousse constamment à explorer de nouvelles solutions et à perfectionner 
+                        mes compétences.
+                    </p>
+                    <div class="about-details mt-4">
+                        <div class="detail-item">
+                            <strong><i class="fas fa-graduation-cap me-2"></i>Formation :</strong> 
+                            Licence en Génie Logiciel - Institut Universitaire des Leaders
+                        </div>
+                        <div class="detail-item">
+                            <strong><i class="fas fa-code me-2"></i>Spécialités :</strong> 
+                            Développement Web Full Stack, C# .NET, Applications Desktop
+                        </div>
+                        <div class="detail-item">
+                            <strong><i class="fas fa-map-marker-alt me-2"></i>Localisation :</strong> 
+                            Douala, Cameroun
+                        </div>
+                        <div class="detail-item">
+                            <strong><i class="fas fa-clock me-2"></i>Disponibilité :</strong> 
+                            24/7 - Travail en ligne et déplacements possibles
+                        </div>
+                        <div class="detail-item">
+                            <strong><i class="fas fa-language me-2"></i>Langues :</strong> 
+                            Français (natif), Anglais (professionnel)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="skills-section">
+                        <h3><i class="fas fa-tools me-2"></i>Mes compétences techniques</h3>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span><i class="fab fa-microsoft me-2"></i>C# Development (.NET, WPF, WinForms)</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span><i class="fab fa-html5 me-2"></i>Frontend (HTML, CSS, JavaScript, Bootstrap)</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span><i class="fas fa-server me-2"></i>Backend (PHP, Node.js, API REST)</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span><i class="fas fa-database me-2"></i>Bases de données (MySQL, SQL Server, MongoDB)</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span><i class="fab fa-git-alt me-2"></i>Outils (Git, Visual Studio, VS Code)</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-section mt-4">
+                        <h3><i class="fas fa-briefcase me-2"></i>Expérience professionnelle</h3>
+                        <div class="experience-item">
+                            <h5>Développeur Full Stack Freelance</h5>
+                            <span class="text-muted">2021 - Présent</span>
+                            <p>Développement d'applications web et desktop pour divers clients internationaux.</p>
+                        </div>
+                        <div class="experience-item">
+                            <h5>Développeur C# Junior</h5>
+                            <span class="text-muted">2020 - 2021</span>
+                            <p>Développement d'applications desktop et maintenance de systèmes existants.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Mes Services</h2>
+            <p class="text-center mb-5 lead">
+                Des solutions complètes pour tous vos besoins de développement
+            </p>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3>Applications Desktop</h3>
+                        <p>Développement d'applications Windows robustes en C# avec WPF et WinForms pour optimiser vos processus métier.</p>
+                        <ul class="service-features">
+                            <li>Interface utilisateur moderne</li>
+                            <li>Performance optimisée</li>
+                            <li>Intégration système avancée</li>
+                            <li>Support et maintenance</li>
+                        </ul>
+                        <div class="service-price">À partir de <strong>300,000 FCFA</strong></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="service-card featured">
+                        <div class="service-badge">Populaire</div>
+                        <div class="service-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Développement Web</h3>
+                        <p>Création de sites web et applications web complètes avec les dernières technologies front-end et back-end.</p>
+                        <ul class="service-features">
+                            <li>Design responsive</li>
+                            <li>SEO optimisé</li>
+                            <li>Performance élevée</li>
+                            <li>Sécurité renforcée</li>
+                        </ul>
+                        <div class="service-price">À partir de <strong>350,000 FCFA</strong></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Applications Mobiles</h3>
+                        <p>Développement d'applications mobiles cross-platform avec Xamarin pour iOS et Android simultanément.</p>
+                        <ul class="service-features">
+                            <li>Code partagé C#</li>
+                            <li>Performance native</li>
+                            <li>Interface adaptative</li>
+                            <li>Déploiement stores</li>
+                        </ul>
+                        <div class="service-price">À partir de <strong>400,000 FCFA</strong></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Bases de Données</h3>
+                        <p>Conception et optimisation de bases de données performantes avec modélisation avancée et requêtes optimisées.</p>
+                        <ul class="service-features">
+                            <li>Modélisation de données</li>
+                            <li>Optimisation des performances</li>
+                            <li>Sécurité des données</li>
+                            <li>Migration et backup</li>
+                        </ul>
+                        <div class="service-price">À partir de <strong>200,000 FCFA</strong></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>API & Intégrations</h3>
+                        <p>Développement d'API REST robustes et intégration de services tiers pour connecter vos systèmes.</p>
+                        <ul class="service-features">
+                            <li>API RESTful</li>
+                            <li>Documentation complète</li>
+                            <li>Authentification sécurisée</li>
+                            <li>Tests automatisés</li>
+                        </ul>
+                        <div class="service-price">À partir de <strong>300,000 FCFA</strong></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Formation & Conseil</h3>
+                        <p>Formation technique et conseil en développement pour améliorer les compétences de votre équipe.</p>
+                        <ul class="service-features">
+                            <li>Formation personnalisée</li>
+                            <li>Audit de code</li>
+                            <li>Bonnes pratiques</li>
+                            <li>Mentorat technique</li>
+                        </ul>
+                        <div class="service-price">À partir de <strong>15,000 FCFA/jour</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Mes Œuvres</h2>
+            <p class="text-center mb-5 lead">
+                Découvrez mes principales réalisations qui démontrent mon expertise en développement logiciel
+            </p>
+            
+            <!-- Portfolio Filter -->
+            <div class="portfolio-filter text-center mb-5">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="desktop">Desktop</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+            
+            <div class="row portfolio-grid">
+                <div class="col-lg-4 mb-4 portfolio-item" data-category="desktop">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600" alt="MySCC Application" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link" data-project="myscc">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3><i class="fas fa-desktop me-2"></i>MySCC</h3>
+                            <p class="portfolio-description">
+                                Application Windows développée en C# pour la gestion et l'optimisation système. 
+                                MySCC permet aux utilisateurs de nettoyer, optimiser et surveiller les performances 
+                                de leur ordinateur avec une interface intuitive et des fonctionnalités avancées.
+                            </p>
+                            <div class="portfolio-features">
+                                <h6>Fonctionnalités principales :</h6>
+                                <ul>
+                                    <li>Nettoyage automatique du système</li>
+                                    <li>Optimisation des performances</li>
+                                    <li>Surveillance en temps réel</li>
+                                    <li>Interface utilisateur moderne</li>
+                                </ul>
+                            </div>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">WPF</span>
+                                <span class="tech-tag">Windows API</span>
+                                <span class="tech-tag">.NET Framework</span>
+                            </div>
+                            <button class="btn btn-primary" onclick="showProjectDetails('myscc')">
+                                <i class="fas fa-eye me-2"></i>Voir les détails
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 portfolio-item" data-category="web">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/5940721/pexels-photo-5940721.jpeg?auto=compress&cs=tinysrgb&w=600" alt="MyStudent Application" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link" data-project="mystudent">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3><i class="fas fa-graduation-cap me-2"></i>MyStudent</h3>
+                            <p class="portfolio-description">
+                                Plateforme web complète pour la gestion des étudiants et des cours en ligne. 
+                                MyStudent facilite l'administration scolaire avec des modules pour les inscriptions, 
+                                notes, emplois du temps et communication entre étudiants et professeurs.
+                            </p>
+                            <div class="portfolio-features">
+                                <h6>Fonctionnalités principales :</h6>
+                                <ul>
+                                    <li>Gestion des inscriptions</li>
+                                    <li>Suivi des notes et évaluations</li>
+                                    <li>Emplois du temps interactifs</li>
+                                    <li>Système de messagerie intégré</li>
+                                </ul>
+                            </div>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                            <button class="btn btn-primary" onclick="showProjectDetails('mystudent')">
+                                <i class="fas fa-eye me-2"></i>Voir les détails
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 portfolio-item" data-category="web">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600" alt="DigitalMarket Application" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link" data-project="digitalmarket">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3><i class="fas fa-shopping-cart me-2"></i>DigitalMarket</h3>
+                            <p class="portfolio-description">
+                                Plateforme e-commerce moderne avec système de paiement intégré. DigitalMarket 
+                                offre une expérience d'achat complète avec gestion des produits, commandes, 
+                                paiements sécurisés et tableau de bord administrateur avancé.
+                            </p>
+                            <div class="portfolio-features">
+                                <h6>Fonctionnalités principales :</h6>
+                                <ul>
+                                    <li>Catalogue produits dynamique</li>
+                                    <li>Panier et commandes en ligne</li>
+                                    <li>Paiements sécurisés</li>
+                                    <li>Dashboard administrateur</li>
+                                </ul>
+                            </div>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Express.js</span>
+                                <span class="tech-tag">Stripe API</span>
+                            </div>
+                            <button class="btn btn-primary" onclick="showProjectDetails('digitalmarket')">
+                                <i class="fas fa-eye me-2"></i>Voir les détails
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 portfolio-item" data-category="mobile">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=600" alt="TaskMaster Mobile App" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link" data-project="taskmaster">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3><i class="fas fa-mobile-alt me-2"></i>TaskMaster</h3>
+                            <p class="portfolio-description">
+                                Application mobile de gestion de tâches développée avec Xamarin. TaskMaster permet 
+                                aux équipes de collaborer efficacement avec synchronisation en temps réel et 
+                                notifications push intelligentes.
+                            </p>
+                            <div class="portfolio-features">
+                                <h6>Fonctionnalités principales :</h6>
+                                <ul>
+                                    <li>Gestion de projets collaboratifs</li>
+                                    <li>Synchronisation temps réel</li>
+                                    <li>Notifications push</li>
+                                    <li>Mode hors ligne</li>
+                                </ul>
+                            </div>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">Xamarin</span>
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">SQLite</span>
+                                <span class="tech-tag">Azure</span>
+                            </div>
+                            <button class="btn btn-primary" onclick="showProjectDetails('taskmaster')">
+                                <i class="fas fa-eye me-2"></i>Voir les détails
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 portfolio-item" data-category="web">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=600" alt="HealthTracker Web App" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link" data-project="healthtracker">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3><i class="fas fa-heartbeat me-2"></i>HealthTracker</h3>
+                            <p class="portfolio-description">
+                                Plateforme web de suivi médical permettant aux patients de gérer leurs données 
+                                de santé et aux professionnels de suivre l'évolution de leurs patients avec 
+                                des tableaux de bord intuitifs.
+                            </p>
+                            <div class="portfolio-features">
+                                <h6>Fonctionnalités principales :</h6>
+                                <ul>
+                                    <li>Suivi des constantes vitales</li>
+                                    <li>Gestion des rendez-vous</li>
+                                    <li>Historique médical</li>
+                                    <li>Téléconsultation intégrée</li>
+                                </ul>
+                            </div>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">ASP.NET Core</span>
+                                <span class="tech-tag">SQL Server</span>
+                                <span class="tech-tag">Chart.js</span>
+                            </div>
+                            <button class="btn btn-primary" onclick="showProjectDetails('healthtracker')">
+                                <i class="fas fa-eye me-2"></i>Voir les détails
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 portfolio-item" data-category="desktop">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600" alt="InventoryPro Desktop App" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link" data-project="inventorypro">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3><i class="fas fa-boxes me-2"></i>InventoryPro</h3>
+                            <p class="portfolio-description">
+                                Système de gestion d'inventaire complet développé en C# WPF pour les entreprises. 
+                                InventoryPro optimise la gestion des stocks avec codes-barres, alertes automatiques 
+                                et rapports détaillés.
+                            </p>
+                            <div class="portfolio-features">
+                                <h6>Fonctionnalités principales :</h6>
+                                <ul>
+                                    <li>Gestion des stocks en temps réel</li>
+                                    <li>Scanner de codes-barres</li>
+                                    <li>Rapports et analytics</li>
+                                    <li>Gestion multi-entrepôts</li>
+                                </ul>
+                            </div>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">WPF</span>
+                                <span class="tech-tag">Entity Framework</span>
+                                <span class="tech-tag">SQL Server</span>
+                            </div>
+                            <button class="btn btn-primary" onclick="showProjectDetails('inventorypro')">
+                                <i class="fas fa-eye me-2"></i>Voir les détails
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Mon Blog Tech</h2>
+            <p class="text-center mb-5 lead">
+                Partagez ma passion pour le développement à travers mes articles et tutoriels
+            </p>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=400" alt="C# Best Practices">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="fas fa-calendar me-1"></i>15 Nov 2024</span>
+                                <span class="blog-category">C#</span>
+                            </div>
+                            <h3>Les meilleures pratiques en C# pour 2024</h3>
+                            <p>
+                                Découvrez les dernières tendances et techniques pour optimiser votre code C#. 
+                                Dans cet article, j'explore les patterns modernes, les nouvelles fonctionnalités 
+                                de .NET 8 et les bonnes pratiques pour écrire du code maintenable et performant.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">.NET 8</span>
+                                <span class="blog-tag">Performance</span>
+                                <span class="blog-tag">Clean Code</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary" onclick="showBlogPost('csharp-practices')">
+                                <i class="fas fa-book-open me-2"></i>Lire l'article
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Full Stack Development">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="fas fa-calendar me-1"></i>10 Nov 2024</span>
+                                <span class="blog-category">Web Dev</span>
+                            </div>
+                            <h3>Développement Full Stack : Guide complet 2024</h3>
+                            <p>
+                                Un guide détaillé pour maîtriser le développement full stack moderne. 
+                                De la conception d'API REST à l'intégration frontend, en passant par 
+                                la gestion des bases de données et le déploiement en production.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">API REST</span>
+                                <span class="blog-tag">Frontend</span>
+                                <span class="blog-tag">Backend</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary" onclick="showBlogPost('fullstack-guide')">
+                                <i class="fas fa-book-open me-2"></i>Lire l'article
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Performance Optimization">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="fas fa-calendar me-1"></i>5 Nov 2024</span>
+                                <span class="blog-category">Performance</span>
+                            </div>
+                            <h3>Optimiser les performances de vos applications</h3>
+                            <p>
+                                Techniques avancées pour améliorer les performances de vos projets web et desktop. 
+                                Profiling, optimisation mémoire, mise en cache, et stratégies de déploiement 
+                                pour des applications rapides et scalables.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">Optimisation</span>
+                                <span class="blog-tag">Profiling</span>
+                                <span class="blog-tag">Cache</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary" onclick="showBlogPost('performance-tips')">
+                                <i class="fas fa-book-open me-2"></i>Lire l'article
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Database Design">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="fas fa-calendar me-1"></i>1 Nov 2024</span>
+                                <span class="blog-category">Database</span>
+                            </div>
+                            <h3>Conception de bases de données efficaces</h3>
+                            <p>
+                                Maîtrisez l'art de concevoir des bases de données robustes et performantes. 
+                                Normalisation, indexation, requêtes optimisées et choix entre SQL et NoSQL 
+                                selon vos besoins projet.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">SQL</span>
+                                <span class="blog-tag">NoSQL</span>
+                                <span class="blog-tag">Design</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary" onclick="showBlogPost('database-design')">
+                                <i class="fas fa-book-open me-2"></i>Lire l'article
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Mobile Development">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="fas fa-calendar me-1"></i>28 Oct 2024</span>
+                                <span class="blog-category">Mobile</span>
+                            </div>
+                            <h3>Développement mobile avec Xamarin</h3>
+                            <p>
+                                Explorez le développement d'applications mobiles cross-platform avec Xamarin. 
+                                Partagez votre code C# entre iOS et Android tout en conservant des performances 
+                                natives et une expérience utilisateur optimale.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">Xamarin</span>
+                                <span class="blog-tag">Cross-platform</span>
+                                <span class="blog-tag">Mobile</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary" onclick="showBlogPost('xamarin-mobile')">
+                                <i class="fas fa-book-open me-2"></i>Lire l'article
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=400" alt="DevOps">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="fas fa-calendar me-1"></i>25 Oct 2024</span>
+                                <span class="blog-category">DevOps</span>
+                            </div>
+                            <h3>Introduction au DevOps pour développeurs</h3>
+                            <p>
+                                Découvrez les pratiques DevOps essentielles pour améliorer votre workflow de développement. 
+                                CI/CD, containerisation avec Docker, et automatisation des déploiements 
+                                pour des livraisons plus rapides et fiables.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">CI/CD</span>
+                                <span class="blog-tag">Docker</span>
+                                <span class="blog-tag">Automation</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary" onclick="showBlogPost('devops-intro')">
+                                <i class="fas fa-book-open me-2"></i>Lire l'article
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary btn-lg" onclick="showAllBlogPosts()">
+                    <i class="fas fa-plus me-2"></i>Voir tous les articles
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Témoignages Clients</h2>
+            <p class="text-center mb-5 lead">
+                Ce que disent mes clients satisfaits de notre collaboration
+            </p>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Wilfred a développé notre application de gestion interne en C#. Son professionnalisme et sa réactivité nous ont impressionnés. L'application fonctionne parfaitement et a considérablement amélioré notre productivité."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h5>Marie Dubois</h5>
+                                <span>Directrice IT, TechCorp France</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Excellent travail sur notre plateforme e-commerce. Wilfred a su comprendre nos besoins complexes et livrer une solution robuste et scalable. Je recommande vivement ses services pour tout projet web."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h5>Jean-Paul Martin</h5>
+                                <span>CEO, Digital Commerce Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Collaboration exceptionnelle pour le développement de notre application mobile. Wilfred maîtrise parfaitement Xamarin et a su créer une app performante compatible iOS et Android. Très satisfait du résultat!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h5>Sarah Johnson</h5>
+                                <span>Product Manager, MobileFirst Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Wilfred a refonte complètement notre système de base de données et développé une API REST performante. Son expertise technique et sa disponibilité 24/7 ont fait la différence dans notre projet."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h5>Ahmed Ben Ali</h5>
+                                <span>CTO, DataFlow Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Formation technique excellente pour notre équipe de développeurs. Wilfred a su transmettre ses connaissances en C# et .NET de manière claire et pratique. Nos développeurs sont maintenant beaucoup plus efficaces."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h5>Lisa Rodriguez</h5>
+                                <span>HR Manager, DevTeam Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Application desktop parfaite pour la gestion de notre inventaire. Interface intuitive, performances excellentes et fonctionnalités avancées. Wilfred a dépassé nos attentes et respecté tous les délais."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h5>Pierre Lecomte</h5>
+                                <span>Gérant, Logistics Pro</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title mb-4">Travaillons ensemble</h2>
+                    <p class="lead mb-5">
+                        Prêt à donner vie à votre projet ? Contactez-moi pour discuter de vos besoins 
+                        et découvrir comment je peux vous aider à atteindre vos objectifs.
+                    </p>
+                    
+                    <div class="contact-info mb-5">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="contact-item">
+                                    <i class="fas fa-phone-alt fa-2x mb-3"></i>
+                                    <h4>Téléphone</h4>
+                                    <p>+237 672 922 360</p>
+                                    <small>Disponible 24h/24, 7j/7</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt fa-2x mb-3"></i>
+                                    <h4>Localisation</h4>
+                                    <p>Douala, Cameroun</p>
+                                    <small>Travail en ligne et déplacements</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="contact-item">
+                                    <i class="fas fa-clock fa-2x mb-3"></i>
+                                    <h4>Disponibilité</h4>
+                                    <p>24/7 - 7j/7</p>
+                                    <small>Réponse rapide garantie</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://wa.me/672922360" target="_blank" class="social-link" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://facebook.com/wilfred.djikiakam" target="_blank" class="social-link" title="Facebook Personnel">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://facebook.com/lerespocodeur" target="_blank" class="social-link" title="Page Facebook Professionnelle">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/respocodeur" target="_blank" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com/respocodeur" target="_blank" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/wilfred-djikiakam" target="_blank" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    
+                    <a href="https://wa.me/672922360?text=Bonjour%20Wilfred,%20je%20souhaite%20discuter%20d'un%20projet%20avec%20vous." target="_blank" class="btn btn-warning btn-lg mt-4">
+                        <i class="fab fa-whatsapp me-2"></i>Discuter sur WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Respo_codeur. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>Développé avec ❤️ par Wilfred Djikiakam</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Modal -->
+    <div class="modal fade" id="notificationModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-bell text-warning me-2"></i>Notifications
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="notification-item">
+                        <div class="notification-icon">
+                            <i class="fas fa-code text-primary"></i>
+                        </div>
+                        <div class="notification-content">
+                            <h6>Nouveau projet en cours</h6>
+                            <p>Je travaille actuellement sur une nouvelle application C# révolutionnaire pour la gestion d'entreprise !</p>
+                            <small class="text-muted">Il y a 2 heures</small>
+                        </div>
+                    </div>
+                    <div class="notification-item">
+                        <div class="notification-icon">
+                            <i class="fas fa-blog text-success"></i>
+                        </div>
+                        <div class="notification-content">
+                            <h6>Nouvel article de blog</h6>
+                            <p>Découvrez mon dernier article sur les meilleures pratiques en C# pour 2024.</p>
+                            <small class="text-muted">Hier</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                        Marquer comme lu
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Details Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalTitle">Détails du projet</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="projectModalBody">
+                    <!-- Content will be dynamically loaded -->
+                </div>
+                <div class="modal-footer">
+                    <a href="https://wa.me/672922360" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-whatsapp me-2"></i>Discuter du projet
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Post Modal -->
+    <div class="modal fade" id="blogModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalTitle">Article de blog</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="blogModalBody">
+                    <!-- Content will be dynamically loaded -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="shareBlogPost()">
+                        <i class="fas fa-share me-2"></i>Partager
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
